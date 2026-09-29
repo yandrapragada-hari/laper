@@ -126,9 +126,9 @@ Over the course of the project, we developed three architectural iterations of L
 
 ```mermaid
 flowchart TD
-    A["Iteration 1: Standalone LPARA-Ridge<br>(Group-Regularized Linear Base)"] -->|Problem: Missing Non-Linear Tree Splits| B["Iteration 2: Two-Stage LPARA-Hybrid<br>(Linear Base + XGBoost Residuals)"]
-    B -->|Problem: High 5-Fold CV Variance (±0.318)| C["Iteration 3: LPARA-Stacking (A+ Meta Ensemble)<br>(RobustScaler + Multi-Family Blender)"]
-    C --> D["Final Verified Champion<br>(CV R²: 0.8143 ±0.035 | Unseen R²: 0.8339)"]
+    A["Iteration 1: Standalone LPARA-Ridge<br>(Group-Regularized Linear Base)"] -->|"Problem: Missing Non-Linear Tree Splits"| B["Iteration 2: Two-Stage LPARA-Hybrid<br>(Linear Base + XGBoost Residuals)"]
+    B -->|"Problem: High 5-Fold CV Variance (+/- 0.318)"| C["Iteration 3: LPARA-Stacking (A+ Meta Ensemble)<br>(RobustScaler + Multi-Family Blender)"]
+    C --> D["Final Verified Champion<br>(CV R2: 0.8143 +/- 0.035 | Unseen R2: 0.8339)"]
 ```
 
 ### Iteration 1: Standalone LPARA-Ridge (`DomainAdaptiveRidgeRegressor`)
